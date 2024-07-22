@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Joalheria</title>
+    <link rel="stylesheet" href="../styles/aliancas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="product-card.js" defer></script>
+</head>
+<body>
+    <main id="main">
+        <div id="container-main" style="margin-top: 2rem;">
+            <h1>Brincos</h1>
+
+            <div class="content">
+                <div class="container-filtros">
+                    <div>
+                        <h1 style="font-size: 1.3rem;">Filtro</h1>
+                        <label for="customRange1" class="form-label">Valor até: R$ 500.00</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                    <hr>
+                    <div style="margin-top: 1rem;">
+                        <h1 style="font-size: 1.3rem;">Ordenar Por</h1>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                A - Z
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Z - A
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Maior Valor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Menor Valor
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="btn btn-primary button-comprar" style="width: 100%; height: 2.2rem;">Aplicar</a>
+                </div>
+
+                <div class="container-produtos">
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/v/j/vj5953thumb.jpg?quality=100"
+                        alt="Brincos Ouro 18K Pedra Branca 3mm"
+                        title="Brincos Ouro 18K Pedra Branca 3mm"
+                        rating="5"
+                        original-price="R$ 289.90"
+                        discounted-price="R$ 173.94"
+                        installments="10X DE R$17,39 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/b/r/brincos-coracao-ouro-18k.jpg?quality=100"
+                        alt="Brincos Coração Ouro 18k"
+                        title="Brincos Coração Ouro 18k"
+                        rating="5"
+                        original-price="R$ 489.90"
+                        discounted-price="R$ 391.92"
+                        installments="10X DE R$39,19 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/b/r/brinco-pedra-ouro-18k-5mm-branca.jpg?quality=100"
+                        alt="Brinco Pedra Ouro 18K 5mm Branca"
+                        title="Brinco Pedra Ouro 18K 5mm Branca"
+                        rating="5"
+                        original-price="R$ 419.90"
+                        discounted-price="R$ 335.92"
+                        installments="10X DE R$33,59 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/b/r/brincosinfinitocomcoracoesouro18kthumb_2.jpg"
+                        alt="Brincos Infinito com Corações Ouro 18K"
+                        title="Brincos Infinito com Corações Ouro 18K"
+                        rating="5"
+                        original-price="R$ 389.90"
+                        discounted-price="R$ 331.42"
+                        installments="10X DE R$33,14 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/b/r/brincoearcuffestrelasvazadoouro18kthumb_2.jpg?quality=100"
+                        alt="Brinco Ear Cuff Estrelas Vazado Ouro 18K"
+                        title="Brinco Ear Cuff Estrelas Vazado Ouro 18K"
+                        rating="5"
+                        original-price="R$ 419.90"
+                        discounted-price="R$ 356.92"
+                        installments="10X DE R$35,69 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/v/j/vj4725thumb.jpg"
+                        alt="Brincos Ouro 18K Pedra Rosa 3mm"
+                        title="Brincos Ouro 18K Pedra Rosa 3mm"
+                        rating="5"
+                        original-price="R$ 289.90"
+                        discounted-price="R$ 173.94"
+                        installments="10X DE R$17,39 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/v/j/vj8510thumb.jpg"
+                        alt="Brincos Ouro 18K Flor De Lótus Com Pérola"
+                        title="Brincos Ouro 18K Flor De Lótus Com Pérola"
+                        rating="5"
+                        original-price="R$ 839.90"
+                        discounted-price="R$ 713.92"
+                        installments="10X DE R$71,39 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/b/r/brinco-palito-ouro-18k.jpg?quality=100"
+                        alt="Brinco Palito Ouro 18k"
+                        title="Brinco Palito Ouro 18k"
+                        rating="5"
+                        original-price="R$ 819.90"
+                        discounted-price="R$ 696.92"
+                        installments="10X DE R$69,69 SEM JUROS">
+                    </product-card>
+
+                    <product-card 
+                        img-src="https://virtualjoias.com/media/catalog/product/cache/2606ad8a2e237282be5631f3e1487bf0/b/r/brincos-ouro-18k-vj1476_01.jpg?quality=100"
+                        alt="Brincos Ouro 18K Pedra Branca 6mm"
+                        title="Brincos Ouro 18K Pedra Branca 6mm"
+                        rating="5"
+                        original-price="R$ 289.90"
+                        discounted-price="R$ 173.94"
+                        installments="10X DE R$17,39 SEM JUROS">
+                    </product-card>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="loja.ace.custo.js"></script>
+</body>
+</html>
